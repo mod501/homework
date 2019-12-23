@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>问卷调查</title>
+		<style type="text/css">
+			body{
+				background-color: #204D74;
+			}
+			h1{
+				font-weight: bolder;
+				color: #286090;
+				text-align: center;
+				padding-top: 10px;
+			}
+			.div{
+				width: 800px;
+				margin: 0 auto;
+				margin-top: 50px;
+				background-color: white;
+			}
+			p{
+				font-size: 20px;
+			}
+			span{color: #9D9D9D;}
+			.tijia{background-color: #286090;
+			color: white;
+			font-size: 20px;
+			margin-bottom: 20px;}
+		</style>
+	</head>
+	<body>
+		
+		<div class="div">
+			<h1>问卷调查</h1>
+		<form id="myform" name="myform" action="http:/www.baidu.com">
+			<p>1、你的性别：<br />
+				<input type="radio" id="s1" name="sexGroup" value="man"/>男<br />
+				<input type="radio" id="s2" name="sexGroup" value="woman"/>女<br />
+				<hr />
+			</p>
+			<p>2、你的年纪：<br />
+				<input type="radio" id="a1" name="age" value="age1"/>10~20<br />
+				<input type="radio" id="a2" name="age" value="age2"/>20~30<br />
+				<input type="radio" id="a2" name="age" value="age3"/>30以上<br />
+				<hr />
+			</p>
+			<p>3、平时对野生动物有了解吗？：<br />
+				<input type="radio" id="R1" name="r" value="r1"/>有<br />
+				<input type="radio" id="R2" name="r" value="r2"/>没有<br />
+				<hr />
+			</p>
+			<p>4、你愿意参加保护野生动物的活动中吗？：<br />
+				<input type="radio" id="H1" name="h" value="h1"/>非常愿意<br />
+				<input type="radio" id="H2" name="h" value="h2"/>一般<br />
+				<input type="radio" id="H2" name="h" value="h3"/>不愿意<br />
+				<hr />
+			</p>
+			<p>5、你觉得保护野生动物对人类有意义吗？：<br />
+				<input type="radio" id="D1" name="d" value="d1"/>有<br />
+				<input type="radio" id="D2" name="d" value="d2"/>没有<br />
+				<hr />
+			</p>
+			<p>6、你是否了解现在野生动物的生存环境：<br />
+				<input type="radio" id="G1" name="g" value="g1"/>非常了解<br />
+				<input type="radio" id="G2" name="g" value="g2"/>比较了解<br />
+				<input type="radio" id="G3" name="g" value="g3"/>了解一部分<br />
+				<input type="radio" id="G4" name="g" value="g4"/>一点都不了解<br />
+				<hr />
+			</p>
+			<p>7、你的餐桌上出现过野生动物吗？：<br />
+				<input type="radio" id="W1" name="w" value="w1"/>经常出现<br />
+				<input type="radio" id="W2" name="w" value="w2"/>偶尔出现<br />
+				<input type="radio" id="W3" name="w" value="w3"/>从未出现<br />
+				<hr />
+			</p>
+			<p>8、你知道野生动物保护协会吗？：<br />
+				<input type="radio" id="T1" name="t" value="t1"/>非常清楚<br />
+				<input type="radio" id="T2" name="t" value="t2"/>知道一点<br />
+				<input type="radio" id="T1" name="t" value="t3"/>完全不知道<br />
+				<hr />
+			</p>
+			<p>9、对于保护野生动物持有什么态度：<br />
+				<input type="radio" id="N1" name="n" value="n1"/>必须保护<br />
+				<input type="radio" id="N2" name="n" value="n2"/>保不保护与我无关<br />
+				<input type="radio" id="N1" name="n" value="n3"/>不需要保护<br />
+				<hr />
+			</p>
+			<p>10、你愿意为保护野生动物付诸什么行动:<span>【多选题】</span><br />
+				<input type="checkbox" id="ck1" value="football"/>金钱<br />
+				<input type="checkbox" id="ck1" value="basketball"/>志愿活动<br />
+				<input type="checkbox" id="ck1" value="swimming"/>宣传呼吁<br />
+				<input type="checkbox" id="ck1" value="travel"/>拒绝野生动物交易<br />
+				<input type="checkbox" id="ck1" value="movie"/>举报非法侵害野生动物行为<br />
+				<input type="checkbox" id="ck1" value="movie"/>其他<input type="text" /> <br />
+			<hr />
+			</p>
+			<p>11、以下哪些是保护野生动物的措施:<span>【多选题】</span><br />
+				<input type="checkbox" id="ck2" value="mai"/>不买卖野生动物<br />
+				<input type="checkbox" id="ck2" value="guo"/>过度开发森林和各种环境<br />
+				<input type="checkbox" id="ck2" value="jian"/>建立自然保护区<br />
+				<input type="checkbox" id="ck2" value="ju"/>拒绝野生动物交易<br />
+				<input type="checkbox" id="ck2" value="you"/>有关部门加强监管<br />
+				<input type="checkbox" id="ck2" value="lu"/>杀戮野生动物 <br />
+			<hr />
+			</p>
+				<a href="ok.html"><center>
+				<input type="button" value="提交" id="tj" class="tijia"/>
+				</center>
+				</a>
+			</form>
+			</div>
+	</body>
+</html>

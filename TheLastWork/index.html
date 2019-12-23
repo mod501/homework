@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet"  href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style type="text/css">
+			.top{background-color: #1B6D85;}
+			.top1{width: 300px;
+				float: left;
+				display: inline;}
+			.img{width: 1000px;
+			     height: 600px;
+				 margin: 0 auto;}
+			.white{color: white;}
+			.midden{height: 50px;
+			        background-color: #2B669A ;
+					text-align: center;
+					font-size: 20px;
+			        }
+			.midden a{text-decoration: none;
+                      color: white;}
+			.midden a:link{color: white;}
+			.midden a:visited{color: white;}
+			.midden a:hover{color: #ebdacc;}
+			.midden a:active{color: #bebfbd;}
+			.midden-1{display: inline;
+			          margin-left: 80px ;
+					  margin-right: 80px;
+					  position: relative;
+					  top: 12px;
+					  }
+			.dorp{position: relative;
+			 display: inline-block;}
+			.dorp-con{
+				margin-top: 10px;
+				margin-left: 70px;
+				display: none;
+			position: absolute;
+			background-color: #245269 ;
+			min-width: 100px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;}
+			.dorp:hover .dorp-con{display:block;}
+			.dorp-p  a{text-decoration: none;
+                      color: white;}
+			.dorp-p a:link{color: white;}
+			.dorp-p a:visited{color: white;}
+			.dorp-p a:hover{color: #ebdacc;}
+			.dorp-p a:active{color: #bebfbd;}
+			.neirong{
+			display: inline;}
+			.jieshao{
+				width: 1300px;
+				margin: 0 auto;
+				margin-top: 20px;
+			}
+			.jieshao-1{border-radius: 50px 0px 0px 0px;}
+			.jieshao-2{border-radius: 0px 50px 0px 0px;}
+			.jieshao-3{border-radius: 0px 0px 0px 50px;}
+			.jieshao-4{border-radius: 0px 0px 50px 0px;}
+			.wenzi{width: 800px;
+			margin: 0 auto;
+				font-size:24px ;
+				font-weight: bold;}
+			.bottom{ height: 100px;
+			width:1000px ;
+			margin: 0 auto;
+			text-shadow: -2px 0px 5px #265A88,5px 0px 5px #265A88,0px 5px 5px #265A88;
+			m
+			}
+			.bottom font{font-size: 100px;
+			             color:  #2AABD2;
+			             }
+		</style>
+		
+		<script type="text/javascript">
+			window.onload=Jungle;
+			window.onload=Ocean;
+			window.onload=NorthandSouthPoles;
+			window.onload=Wonder;
+			window.onload=Visitor;
+			window.onload=showTime;
+			function showTime(){
+			var newDate=new Date();
+			var year=newDate.getFullYear();
+			var month=newDate.getMonth();
+			var day=newDate.getDate();
+			var hh=newDate.getHours();
+			var mm=newDate.getMinutes();
+			var ss=newDate.getSeconds();
+			document.getElementById("s1").innerHTML=year+"年"+(month+1)+"月"+day+"日 "+hh+":"+mm+":"+ss;
+			s1.style.color="white";
+			}
+			setInterval(showTime,1000)/*每隔一段时间执行一次上面的代码*/
+			
+			function Jungle(){
+				window.location.href="Jungle.html"
+			}
+			function Ocean(){
+				window.location.href="Ocean.html"
+				
+			}
+			function NorthandSouthPoles(){
+				window.location.href="North and South Poles.html"
+			}
+			function Wonder(){
+				window.location.href="Wonder.html"
+			}
+			function Visitor(){
+				window.location.href="Visitor.html"
+			}
+		</script>
+	</head>
+	<body>
+		
+	 		<div id="myCarousel" class="carousel slide top">
+				<div class="top1">
+		<font color="white">今天的日期是：</font><span id="s1"></span></div>
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
+				<li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>   
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+        <div class="item active img">
+            <img src="img/dingbu1.jpg" alt="First slide">
+            <div class="carousel-caption">丛林世界</div>
+        </div>
+        <div class="item img">
+            <img src="img/dingbu2.jpg" alt="Second slide">
+            <div class="carousel-caption">海洋世界</div>
+        </div>
+		<div class="item img">
+            <img src="img/dingbu5.jpg" alt="Second slide">
+            <div class="carousel-caption">苍穹翱翔</div>
+        </div>
+				<div class="item img">
+				    <img src="img/dingbu3.jpg" alt="Fourth slide">
+				    <div class="carousel-caption">寒冰世界</div>
+				</div>
+				<div class="item img">
+				    <img src="img/dingbu4.jpg" alt="Fifth slide">
+				    <div class="carousel-caption">奇观世界</div>
+				</div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div class="midden">
+	<div class="dorp">
+		<a href="#"><div class="midden-1" onclick="Jungle()">丛林世界</div></a>
+		<div class="dorp-con">
+			<a href="Huananhu.html"><p>华南虎</p></a>
+			<a href="Chuanshanjia.html"><p>中华穿山甲</p></a>
+			<a href="zanglingyang.html"><p>藏羚羊</p></a>
+			<a href="Milu.html"><p>麋鹿</p></a>
+		</div>
+	</div>
+	<div class="dorp">
+		<a href="#"><div class="midden-1" onclick="Ocean()">海洋世界</div></a>
+		<div class="dorp-con">
+			<a href="Baiqitun.html"><p>白鳍豚</p></a> 
+			<a href="Haigui.html"><p>海龟</p></a>
+			<a href="Zuotoujing.html"><p>座头鲸</p></a>
+			<a href="Husha.html"><p>虎鲨</p></a>
+			<a href="Shuimu.html"><p>水母</p></a>
+		</div>
+	</div>
+	<div class="dorp">
+		<a href="#"><div class="midden-1" onclick="Jungle()">苍穹翱翔</div></a>
+		<div class="dorp-con">
+			<a href="Dandinghe.html"><p>丹顶鹤</p></a>
+			<a href="Cangying.html"><p>苍鹰</p></a>
+			<a href="Huolieniao.html"><p>火烈鸟</p></a>
+			<a href="Tihu.html"><p>鹈鹕</p></a>
+		</div>
+	</div>
+	<div class="dorp">
+		<a href="#"><div class="midden-1" onclick="NorthandSouthPoles()">寒冰世界</div></a>
+		<div class="dorp-con">
+			<a href="Beijixiong.html"><p>北极熊</p></a>
+			<a href="Diwangqie.html"><p>帝王企鹅</p></a>
+			<a href="Xuehu.html"><p>雪狐</p></a>
+			<a href="Haixiang.html"><p>海象</p></a>
+			<a href="Haibao.html"><p>海豹</p></a>
+		</div>
+	</div>
+	<div class="dorp">
+		<a href="#"><div class="midden-1" onclick="Wonder()">奇观世界</div></a>
+		<div class="dorp-con">
+			<a href="Ruzhuangyun.html"><p>乳状云</p></a>
+			<a href="Dizhengguang.html"><p>地震光</p></a>
+			<a href="Beijiguang.html"><p>北极光</p></a>
+		</div>
+	</div>
+	<div class="dorp">
+		<a href="#"><div class="midden-1" onclick="Visitor()">访问者</div></a>
+	</div>
+</div>
+<div class="jieshao">
+	<img src="img/renyudongwu1.jpg" width="600px" class="jieshao-1"/>
+	<img src="img/renyudongwu2.jpg" width="600px" class="jieshao-2" />
+	<img src="img/renyudongwu3.jpeg" width="600px" class="jieshao-3" />
+	<img src="img/renyudongwu4.jpg" width="600px" class="jieshao-4" />
+	<div class="wenzi">人类与动物以及大自然是相辅相成的。对于动物，我们应尽力去保护它们，以弥补过去对它们的伤害，挽回与它们之间的友谊，携手并进，共创美好家园，促进人与动物与自然和谐稳定地发展。</div>
+</div>
+
+<div class="bottom"><font>欢迎来到动物世界</font> </div>
+
+<div id="banner">
+	<div id="carousel">
+		<img src="img/dingbu1.jpg" data-url="#">
+		<img src="img/dingbu2.jpg" data-url="#">
+		<img src="img/dingbu5.jpg" data-url="#">
+		<img src="img/dingbu3.jpg" data-url="#">
+		<img src="img/dingbu4.jpg" data-url="#">
+	</div>
+</div>
+
+<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$(function() {
+		$('#carousel').carousel({
+			curDisplay: 0, //默认索引
+			autoPlay: false, //是否自动播放
+			interval: 3000 //间隔时间
+		});
+	});
+</script>
+	</body>
+</html>

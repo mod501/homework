@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户登录</title>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet"  href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript">
+			function showMessage(){
+				var username=document.getElementById("userName").value/*文本框的值*/;
+				var userpassword=document.getElementById("userPassword").value;
+				/*document.getElementById("div1").innerHTML="您注册的名称："+username+" 密码："+userpassword;*/
+				if(username!=""){
+					document.getElementById("userdiv").innerHTML="ok";
+					document.getElementById("userdiv").className="green"
+				}else{
+					document.getElementById("userdiv").innerHTML="用户名不能为空";
+					document.getElementById("userdiv").className="red"
+				}
+				
+			}
+			function showpsw(){
+				var username=document.getElementById("userName").value/*文本框的值*/;
+				var userpassword=document.getElementById("userPassword").value;
+				if(userpassword !="" & userpassword.length >= 6){
+					document.getElementById("Passworddiv").innerHTML="ok";
+					document.getElementById("Passworddiv").className="green"
+				}else if(userpassword == ""){
+					document.getElementById("Passworddiv").innerHTML="密码不能为空";
+					document.getElementById("Passworddiv").className="red"
+				}else{
+					document.getElementById("Passworddiv").innerHTML="密码不能少于六位";
+					document.getElementById("Passworddiv").className="red"
+				}
+				}
+			
+			
+			function showCode() {
+            document.getElementById("VerificationCodediv").innerHTML=codes(4);
+        }
+			  function codes(n) {
+            var a = "abcdefghijklmnopqrstuvwxyzABCDEFJHIGKLMNOPQRSDYVWXYZ";
+            var b = "";
+            for (var i = 0; i < n; i++) {
+                var index = Math.floor(Math.random() * 52);
+                b += a.charAt(index);
+            }
+            return b;
+       }
+		    function verification(){
+		    	var str1=document.getElementById("VerificationCode").value;
+		    	var str2=document.getElementById("VerificationCodediv").innerHTML;
+		    	if(str1==str2){
+		    		document.getElementById("Verificationdiv").innerHTML="验证码正确";
+		    		document.getElementById("Verificationdiv").className="green";
+		    	}else if(str2 == ""){
+		    		document.getElementById("Verificationdiv").innerHTML="请输入验证码";
+		    		document.getElementById("Verificationdiv").className="red";
+		    	}else{
+		    		document.getElementById("Verificationdiv").innerHTML="验证码错误";
+		    		document.getElementById("Verificationdiv").className="red";
+		    	}
+		    }
+		    function showLogin(){
+		    	var a=document.getElementById("Verificationdiv").innerHTML;
+		    	var b=document.getElementById("userName").innerHTML;
+		    	var c=document.getElementById("userPassword").innerHTML;
+		    	if(a=="验证码正确"){
+		    		window.location.href="Question.html";
+		    	}else{
+		    		alert("登陆失败");
+		    	}
+		    }
+		</script>
+		<style type="text/css">
+			body{background-color: #265A88;}
+			#right{
+	width:325px;
+	height: 200px;
+	float: inherit;
+	border-style:solid ;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-color: white;
+}
+.red{color: red;
+}
+.green{color: green;
+}
+table{
+	margin-top: 10px;
+}
+#VerificationCodediv {
+            width: 50px;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 auto;
+            
+            text-align: center;
+            color: red;
+        }
+		h1{color: #1B6D85;
+		   font-size: 20px;
+		   font-weight: bolder;
+		   text-align: center;}
+		</style>
+	</head>
+	<body>
+		<div id="right">
+			<h1>用户登录</h1>
+			<form><table width="350px" height="100px" align="center">
+			<tr align="center">
+				<td>用户名</td>
+				<td><input type="text" id="userName" onblur="showMessage()"/> </td>
+				<td><div id="userdiv"></div> </td>
+			</tr>
+			<tr align="center">
+				<td>密码</td>
+				<td><input type="password" id="userPassword" onblur="showpsw()" /> </td>
+				<td><div id="Passworddiv"></div> </td>
+			</tr>
+			<tr align="center">
+				<td>验证码</td>
+				<td><input type="text" id="VerificationCode" value="点击获取验证码" onblur="verification()" /> </td>
+				<td bgcolor="aqua"><div id="VerificationCodediv" onclick="showCode()"><a href="#"></a></div> </td>
+				<td width="50px"><div id="Verificationdiv"></div></td>
+			</tr>
+			<tr align="center">
+				<td colspan="2">
+			    <input type="button" value="登录" onclick="showLogin()">
+				<input type="reset" value="取消">
+				</td>
+			</tr>
+		</table></form>
+			</div>
+			<div id="banner">
+				<div id="carousel">
+					<img src="img/keaidedongwu1.jpg" data-url="#">
+					<img src="img/keaidedongwu2.jpg" data-url="#">
+					<img src="img/keaidedongwu3.jpg" data-url="#">
+					<img src="img/keaidedongwu4.jpg" data-url="#">
+					<img src="img/keaidedongwu5.jpg" data-url="#">
+					<img src="img/keaidedongwu6.jpg" data-url="#">
+					<img src="img/keaidedongwu7.jpg" data-url="#">
+					<img src="img/keaidedongwu8.jpg" data-url="#">
+					<img src="img/keaidedongwu9.jpg" data-url="#">
+				</div>
+			</div>
+			
+			<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+			<script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
+			<script>
+				$(function() {
+					$('#carousel').carousel({
+						curDisplay: 0, //默认索引
+						autoPlay: true, //是否自动播放
+						interval: 3000 //间隔时间
+					});
+				});
+			</script>
+	</body>
+</html>

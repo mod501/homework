@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>奇观世界</title>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet"  href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style type="text/css">
+		.midden{height: 50px;
+		        background-color: #2B669A ;
+				text-align: center;
+				font-size: 20px;
+		        }
+		.midden a{text-decoration: none;
+		          color: white;}
+		.midden a:link{color: white;}
+		.midden a:visited{color: white;}
+		.midden a:hover{color: #ebdacc;}
+		.midden a:active{color: #bebfbd;}
+		.midden-1{display: inline;
+		          margin-left: 60px ;
+				  margin-right: 60px;
+				  position: relative;
+				  top: 12px;
+				  }
+		.dorp{position: relative;
+		 display: inline-block;}
+		.dorp-con{
+			margin-top: 10px;
+			margin-left: 65px;
+			display: none;
+		position: absolute;
+		background-color: #245269 ;
+		min-width: 80px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 12px 16px;}
+		.dorp:hover .dorp-con{display:block;}
+		.dorp-p  a{text-decoration: none;
+		          color: white;}
+		.dorp-p a:link{color: white;}
+		.dorp-p a:visited{color: white;}
+		.dorp-p a:hover{color: #ebdacc;}
+		.dorp-p a:active{color: #bebfbd;}
+		.neirong{
+		display: inline;}
+		.bottom{ height: 100px;
+		width:500px ;
+		margin: 0 auto;
+		text-shadow: -2px 0px 5px #265A88,5px 0px 5px #265A88,0px 5px 5px #265A88;
+		m
+		}
+		.bottom font{font-size: 100px;
+		             color:  #2AABD2;
+		             }
+		.huananhu{
+			width: 500px;
+			height: 450px;
+			background-color: #1B6D85;
+			border-radius: 30px;
+			margin-left: 300px;
+			margin-top: 50px;
+		}
+		.huananhu:hover{box-shadow:0px 0px 5px 8px #122B40;}
+		.huananhu img{
+			border-radius: 30px 30px 0px 0px;
+		}
+		.huananhu-text{
+			font-size: 30px;
+			color: white;
+			font-weight: bold;
+			width: 100px;
+			margin: 0 auto;
+			margin-top: 30px;}
+		.chuanshanjia{
+			width: 500px;
+			height: 450px;
+			background-color: #1B6D85;
+			border-radius: 30px;
+			margin-left: 900px;
+			position: relative;
+			top: -450px;
+			}
+		.chuanshanjia:hover{box-shadow:0px 0px 5px 8px #122B40;}
+		.chuanshanjia img{
+			border-radius: 30px 30px 0px 0px;
+			}
+		.chuanshanjia-text{
+			font-size: 30px;
+			color: white;
+			font-weight: bold;
+			width: 100px;
+			margin: 0 auto;
+			margin-top: 40px;
+		}
+		.zanglingyang{
+			width: 500px;
+			height: 450px;
+			background-color: #1B6D85;
+			border-radius: 30px;
+			margin-left: 300px;
+			position: relative;
+			top: -420px;
+		}
+		.zanglingyang:hover{box-shadow:0px 0px 5px 8px #122B40;}
+		.zanglingyang img{
+			border-radius: 30px 30px 0px 0px;
+		}
+		.zanglingyang-text{
+			font-size: 30px;
+			color: white;
+			font-weight: bold;
+			width: 100px;
+			margin: 0 auto;
+			margin-top: 35px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="midden">
+			<div class="dorp">
+				<a href="index.html"><div class="midden-1">首页</div></a>
+			</div>
+			<div class="dorp">
+				<a href="Jungle.html"><div class="midden-1" onclick="Jungle()">丛林世界</div></a>
+				<div class="dorp-con">
+					<a href="Huananhu.html"><p>华南虎</p></a>
+					<a href="Chuanshanjia.html"><p>中华穿山甲</p></a>
+					<a href="zanglingyang.html"><p>藏羚羊</p></a>
+					<a href="#"><p>麋鹿</p></a>
+				</div>
+			</div>
+			<div class="dorp">
+				<a href="Ocean.html"><div class="midden-1">海洋世界</div></a>
+				<div class="dorp-con">
+					<a href="Baiqitun.html"><p>白鳍豚</p></a> 
+					<a href="Haibao.html"><p>海龟</p></a>
+					<a href="Zuotoujing.html"><p>座头鲸</p></a>
+					<a href="Husha.html"><p>虎鲨</p></a>
+					<a href="Shuimu.html"><p>水母</p></a>
+				</div>
+			</div>
+			<div class="dorp">
+				<a href="Sky.html"><div class="midden-1">苍穹翱翔</div></a>
+				<div class="dorp-con">
+					<a href="Dandinghe.html"><p>丹顶鹤</p></a>
+					<a href="Cangying.html"><p>苍鹰</p></a>
+					<a href="Huolieniao.html"><p>火烈鸟</p></a>
+					<a href="Tihu.html"><p>鹈鹕</p></a>
+				</div>
+			</div>
+			<div class="dorp">
+				<a href="North and South Poles.html"><div class="midden-1">寒冰世界</div></a>
+				<div class="dorp-con">
+					<a href="Beijixiong.html"><p>北极熊</p></a>
+					<a href="Diwangqie.html"><p>帝王企鹅</p></a>
+					<a href="Xuehu.html"><p>雪狐</p></a>
+					<a href="Haixiang.html"><p>海象</p></a>
+					<a href="Haibao.html"><p>海豹</p></a>
+				</div>
+			</div>
+			<div class="dorp">
+				<a href="Wonder.html"><div class="midden-1">奇观世界</div></a>
+				<div class="dorp-con">
+					<a href="Ruzhuangyun.html"><p>乳状云</p></a>
+					<a href="Dizhengguang.html"><p>地震光</p></a>
+					<a href="Beijiguang.html"><p>北极光</p></a>
+				</div>
+			</div>
+			<div class="dorp">
+				<a href="Visitor.html"><div class="midden-1">访问者</div></a>
+			</div>
+		</div>
+		<div class="bottom"><font>奇妙之旅</font> </div>
+		
+		<div id="banner">
+			<div id="carousel">
+				<img src="img/ruzhuangyun1.jpg" data-url="#">
+				<img src="img/dizhenguang1.jpg" data-url="#">
+				<img src="img/beijiguang1.jpg" data-url="#">
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/slider.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function() {
+				$('#carousel').carousel({
+					curDisplay: 0, //默认索引
+					autoPlay: false, //是否自动播放
+					interval: 3000 //间隔时间
+				});
+			});
+		</script>
+		<a href="Ruzhuangyun.html">
+		<div class="huananhu">
+		<img src="img/ruzhuangyun1.jpg" width="500px" />
+		<div class="huananhu-text">乳状云</div>
+		</div>
+		</a>
+		<a href="Dizhengguang.html">
+		<div class="chuanshanjia">
+			<img src="img/dizhenguang1.jpg" width="500px"/>
+			<div class="chuanshanjia-text">地震光</div>
+		</div>
+		</a>
+		<a href="zanglingyang.html">
+		<div class="zanglingyang">
+			<img src="img/beijiguang1.jpg" width="500px"/>
+			<div class="zanglingyang-text">北极光</div>
+		</div>
+		</a>
+	</body>
+</html>
